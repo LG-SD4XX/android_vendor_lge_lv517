@@ -94,10 +94,6 @@ special_mode_mask values:
       <CPPLiveshot>s5k5e8_cowell_cpp_liveshot</CPPLiveshot>
       <A3Preview>s5k5e8_cowell_zsl_preview</A3Preview>
       <A3Video>s5k5e8_cowell_zsl_video</A3Video>
-      <A3Preview_tmus>s5k5e8_cowell_zsl_preview_tmus</A3Preview_tmus>
-      <A3Video_tmus>s5k5e8_cowell_zsl_video_tmus</A3Video_tmus>
-      <ISPSnapshot_tmus>s5k5e8_cowell_snapshot_tmus</ISPSnapshot_tmus>
-      <ISPVideo_tmus>s5k5e8_cowell_default_video_tmus</ISPVideo_tmus>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="1">
       <ISPPreview>s5k5e8_cowell_preview</ISPPreview>
@@ -109,10 +105,6 @@ special_mode_mask values:
       <CPPLiveshot>s5k5e8_cowell_cpp_liveshot</CPPLiveshot>
       <A3Preview>s5k5e8_cowell_zsl_preview</A3Preview>
       <A3Video>s5k5e8_cowell_zsl_video</A3Video>
-      <A3Preview_tmus>s5k5e8_cowell_zsl_preview_tmus</A3Preview_tmus>
-      <A3Video_tmus>s5k5e8_cowell_zsl_video_tmus</A3Video_tmus>
-      <ISPSnapshot_tmus>s5k5e8_cowell_snapshot_tmus</ISPSnapshot_tmus>
-      <ISPVideo_tmus>s5k5e8_cowell_default_video_tmus</ISPVideo_tmus>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="2">
       <ISPPreview>s5k5e8_cowell_preview</ISPPreview>
@@ -124,10 +116,6 @@ special_mode_mask values:
       <CPPLiveshot>s5k5e8_cowell_cpp_liveshot</CPPLiveshot>
       <A3Preview>s5k5e8_cowell_zsl_preview</A3Preview>
       <A3Video>s5k5e8_cowell_zsl_video</A3Video>
-      <A3Preview_tmus>s5k5e8_cowell_zsl_preview_tmus</A3Preview_tmus>
-      <A3Video_tmus>s5k5e8_cowell_zsl_video_tmus</A3Video_tmus>
-      <ISPSnapshot_tmus>s5k5e8_cowell_snapshot_tmus</ISPSnapshot_tmus>
-      <ISPVideo_tmus>s5k5e8_cowell_default_video_tmus</ISPVideo_tmus>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="3">
       <ISPPreview>s5k5e8_cowell_vt</ISPPreview>
@@ -139,21 +127,6 @@ special_mode_mask values:
       <CPPLiveshot>s5k5e8_cowell_cpp_vt</CPPLiveshot>
       <A3Preview>s5k5e8_cowell_3a_vt</A3Preview>
       <A3Video>s5k5e8_cowell_3a_vt</A3Video>
-      <A3Preview_tmus>s5k5e8_cowell_3a_vt</A3Preview_tmus>
-      <A3Video_tmus>s5k5e8_cowell_3a_vt</A3Video_tmus>
-      <ISPSnapshot_tmus>s5k5e8_cowell_vt</ISPSnapshot_tmus>
-      <ISPVideo_tmus>s5k5e8_cowell_vt</ISPVideo_tmus>
-    </ChromatixName>
-     <ChromatixName sensor_resolution_index="4">
-      <ISPPreview>s5k5e8_cowell_isp_face_unlock</ISPPreview>
-      <ISPSnapshot>s5k5e8_cowell_isp_face_unlock</ISPSnapshot>
-      <ISPVideo>s5k5e8_cowell_isp_face_unlock</ISPVideo>
-      <CPPPreview>s5k5e8_cowell_cpp_face_unlock</CPPPreview>
-      <CPPSnapshot>s5k5e8_cowell_cpp_face_unlock</CPPSnapshot>
-      <CPPVideo>s5k5e8_cowell_cpp_face_unlock</CPPVideo>
-      <CPPLiveshot>s5k5e8_cowell_cpp_face_unlock</CPPLiveshot>
-      <A3Preview>s5k5e8_cowell_3a_face_unlock</A3Preview>
-      <A3Video>s5k5e8_cowell_3a_face_unlock</A3Video>
     </ChromatixName>
   </ResolutionChromatixInfo>
 </ChromatixConfigurationRoot>

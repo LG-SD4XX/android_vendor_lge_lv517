@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/lge/lv517/proprietary/vendor/bin/mm-qcamera-app:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-app \
     vendor/lge/lv517/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
+    vendor/lge/lv517/proprietary/lib/libatd_corelib.so:system/lib/libatd_corelib.so \
     vendor/lge/lv517/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/lge/lv517/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
     vendor/lge/lv517/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
@@ -119,7 +120,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/lge/lv517/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/lge/lv517/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
     vendor/lge/lv517/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
     vendor/lge/lv517/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/lge/lv517/proprietary/vendor/lib/libsd_sdk_display.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsd_sdk_display.so \
@@ -182,6 +182,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/lge/lv517/proprietary/vendor/bin/wcnss_service:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_service \
     vendor/lge/lv517/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
+    vendor/lge/lv517/proprietary/vendor/etc/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
+    vendor/lge/lv517/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     vendor/lge/lv517/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/lge/lv517/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/lge/lv517/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
@@ -275,6 +277,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/lge/lv517/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/lge/lv517/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libactuator_dw9714a.so:$(TARGET_COPY_OUT_VENDOR)/libactuator_dw9714a.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libactuator_dw9763.so:$(TARGET_COPY_OUT_VENDOR)/libactuator_dw9763.so \
     vendor/lge/lv517/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/lge/lv517/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
     vendor/lge/lv517/proprietary/vendor/lib/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbccQTI.so \
@@ -282,93 +286,94 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/vendor/lib/libc2d30-a3xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30-a3xx.so \
     vendor/lge/lv517/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
     vendor/lge/lv517/proprietary/vendor/lib/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromaflash.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_4k_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_4k_video_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_common.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_cpp_liveshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_cpp_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_cpp_snapshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_cpp_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_default_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_default_preview_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_default_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_default_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_default_video_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_postproc.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_snapshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_zsl_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_zsl_preview_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_zsl_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_lgit_zsl_video_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_4k_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_4k_preview_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_4k_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_4k_video_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_common.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_cpp_liveshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_cpp_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_cpp_snapshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_cpp_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_default_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_default_preview_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_default_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_default_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_default_video_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_postproc.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_snapshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_zsl_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_zsl_preview_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_zsl_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi1332_sunny_zsl_video_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_4k_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_4k_preview_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_4k_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_4k_video_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_common.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_cpp_hfr_120.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_cpp_hfr_60.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_cpp_hfr_90.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_cpp_liveshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_cpp_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_cpp_snapshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_cpp_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_cpp_video_4k.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_default_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_default_preview_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_default_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_default_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_default_video_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_hfr_120.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_hfr_120_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_hfr_120_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_hfr_60.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_hfr_60_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_hfr_60_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_hfr_90.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_hfr_90_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_hfr_90_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_postproc.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_snapshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_video_4k.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_zsl_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_zsl_preview_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_zsl_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi842_zsl_video_bu64244gwz.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_3a_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_3a_vt.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_a3_default_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_a3_default_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_common.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_cpp_liveshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_cpp_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_cpp_snapshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_cpp_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_cpp_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_cpp_vt.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_default_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_postproc.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_snapshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_vt.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_zsl_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_cowell_zsl_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_3a_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_3a_vt.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_a3_default_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_a3_default_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_common.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_cpp_liveshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_cpp_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_cpp_snapshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_cpp_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_cpp_vt.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_default_video.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_postproc.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_snapshot.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_vt.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_zsl_preview.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k5e8_sunny_zsl_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_4k_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_4k_preview_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_4k_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_4k_video_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_common.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_common.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_cpp_liveshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_cpp_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_cpp_snapshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_cpp_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_default_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_default_preview_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_default_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_default_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_default_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_default_video_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_postproc.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_postproc.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_snapshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_zsl_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_zsl_preview_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_lgit_zsl_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_lgit_zsl_video_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_4k_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_4k_preview_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_4k_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_4k_video_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_common.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_cpp_liveshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_cpp_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_cpp_snapshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_cpp_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_default_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_default_preview_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_default_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_default_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_default_video_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_postproc.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_snapshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_zsl_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_zsl_preview_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi1332_sunny_zsl_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi1332_sunny_zsl_video_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_4k_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_4k_preview_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_4k_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_4k_video_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_common.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_common.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_cpp_hfr_120.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_cpp_hfr_60.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_cpp_hfr_90.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_cpp_liveshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_cpp_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_cpp_snapshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_cpp_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_cpp_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_cpp_video_4k.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_default_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_default_preview_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_default_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_default_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_default_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_default_video_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_hfr_120.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_hfr_120_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_hfr_120_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_hfr_60.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_hfr_60_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_hfr_60_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_hfr_90.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_hfr_90_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_hfr_90_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_postproc.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_postproc.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_snapshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_video_4k.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_zsl_preview_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_zsl_preview_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_hi842_zsl_video_bu64244gwz.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_hi842_zsl_video_bu64244gwz.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_3a_vt.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_3a_vt.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_a3_default_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_a3_default_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_common.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_common.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_cpp_liveshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_cpp_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_cpp_snapshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_cpp_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_cpp_vt.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_cpp_vt.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_default_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_default_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_postproc.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_postproc.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_snapshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_vt.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_vt.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_zsl_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_cowell_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_cowell_zsl_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_3a_vt.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_3a_vt.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_a3_default_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_a3_default_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_common.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_common.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_cpp_liveshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_cpp_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_cpp_snapshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_cpp_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_vt.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_cpp_vt.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_default_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_default_video.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_postproc.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_postproc.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_snapshot.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_vt.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_vt.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_zsl_preview.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/libchromatix_s5k5e8_sunny_zsl_video.so \
     vendor/lge/lv517/proprietary/lib/libfpfactory.so:system/lib/libfpfactory.so \
     vendor/lge/lv517/proprietary/lib/libfpfactory_jni.so:system/lib/libfpfactory_jni.so \
     vendor/lge/lv517/proprietary/lib/libgf_algo.so:system/lib/libgf_algo.so \
@@ -402,97 +407,97 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/lge/lv517/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/lge/lv517/proprietary/vendor/lib/libmm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-disp-apis.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmm-qdcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qdcm.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_dcrf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_dcrf.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_frame_algorithm.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_imglib_modules.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_is.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_is.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_isp_modules.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_mct_shimlayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct_shimlayer.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_pp_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_pp_buf_mgr.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_pproc_modules.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_q3a_core.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_algorithm.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_stats_algorithm_sensors.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_algorithm_sensors.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_cac3_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_cac3_lib.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_chromaflash_lib.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_dbg.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_dcrf_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_dcrf_lib.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_dummyalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_dummyalgo.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_eebinparse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eebinparse.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_eeprom_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eeprom_util.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_eztune_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eztune_module.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_facedetection_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_facedetection_lib.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hdr_gb_lib.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_hi1332_lgit.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi1332_lgit.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_hi1332_sunny.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi1332_sunny.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_hi842.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi842.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_hi842_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi842_eeprom.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_abf40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_abf40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_bcc40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bcc40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_be_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_be_stats44.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_bf_stats47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bf_stats47.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_bg_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bg_stats44.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_bhist_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bhist_stats44.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_bpc40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bpc40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_chroma_enhan40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_chroma_enhan40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_chroma_suppress40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_chroma_suppress40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_clamp_encoder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_clamp_encoder40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_clamp_video40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_clamp_video40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_clamp_viewfinder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_clamp_viewfinder40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_color_correct40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_correct40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_color_xform_encoder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_xform_encoder40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_color_xform_viewfinder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_xform_viewfinder40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_cs_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_cs_stats44.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_demosaic40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_demosaic40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_demux40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_demux40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_fovcrop_encoder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_fovcrop_encoder40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_fovcrop_viewfinder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_fovcrop_viewfinder40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_gamma40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_gamma40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_ihist_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_ihist_stats44.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_linearization40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_linearization40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_ltm44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_ltm44.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_luma_adaptation40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_luma_adaptation40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_mce40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_mce40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_mesh_rolloff40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_mesh_rolloff40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_rs_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_rs_stats44.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_scaler_encoder44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_scaler_encoder44.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_scaler_viewfinder44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_scaler_viewfinder44.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_sce40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sce40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sub_module.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_template.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_template.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_wb40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_wb40.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_lgit_hi1332_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_lgit_hi1332_eeprom.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_llvd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_llvd.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_mn34153.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mn34153.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_optizoom_lib.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_paaf_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_paaf_lib.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdaf.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_pdafcamif.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdafcamif.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_ppbase_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ppbase_module.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_ppeiscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ppeiscore.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_quadracfa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_quadracfa.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_s5k5e8_cowell.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k5e8_cowell.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_s5k5e8_sunny.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k5e8_sunny.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_stillmore_lib.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_sunny_hi1332_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_hi1332_eeprom.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sw2d_lib.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_thread_services.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_thread_services.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_algo.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_bg_pca_algo.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_trueportrait_lib.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning_lookup.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ubifocus_lib.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
+        vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_c2d_module.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_cpp_module.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_dcrf.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_dcrf.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_frame_algorithm.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_iface_modules.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_imglib_modules.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_is.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_is.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_isp_modules.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_mct.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_mct_shimlayer.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_mct_shimlayer.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_pp_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_pp_buf_mgr.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_pproc_modules.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_q3a_core.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_sensor_modules.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_stats_algorithm.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_stats_algorithm_sensors.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_stats_algorithm_sensors.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_stats_modules.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_cac3_lib.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_cac3_lib.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_chromaflash_lib.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_dbg.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_dbg.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_dcrf_lib.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_dcrf_lib.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_dummyalgo.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_dummyalgo.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_eebinparse.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_eebinparse.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_eeprom_util.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_eeprom_util.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_eztune_module.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_eztune_module.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_facedetection_lib.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_facedetection_lib.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_faceproc.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_faceproc2.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_hdr_gb_lib.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_hi1332_lgit.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_hi1332_lgit.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_hi1332_sunny.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_hi1332_sunny.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_hi842.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_hi842.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_hi842_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_hi842_eeprom.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_abf40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_abf40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_bcc40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_bcc40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_be_stats44.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_be_stats44.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_bf_stats47.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_bf_stats47.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_bg_stats44.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_bg_stats44.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_bhist_stats44.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_bhist_stats44.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_bpc40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_bpc40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_chroma_enhan40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_chroma_enhan40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_chroma_suppress40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_chroma_suppress40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_clamp_encoder40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_clamp_encoder40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_clamp_video40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_clamp_video40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_clamp_viewfinder40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_clamp_viewfinder40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_color_correct40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_color_correct40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_color_xform_encoder40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_color_xform_encoder40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_color_xform_viewfinder40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_color_xform_viewfinder40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_cs_stats44.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_cs_stats44.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_demosaic40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_demosaic40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_demux40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_demux40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_fovcrop_encoder40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_fovcrop_encoder40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_fovcrop_viewfinder40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_fovcrop_viewfinder40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_gamma40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_gamma40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_ihist_stats44.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_ihist_stats44.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_linearization40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_linearization40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_ltm44.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_ltm44.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_luma_adaptation40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_luma_adaptation40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_mce40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_mce40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_mesh_rolloff40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_mesh_rolloff40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_rs_stats44.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_rs_stats44.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_scaler_encoder44.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_scaler_encoder44.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_scaler_viewfinder44.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_scaler_viewfinder44.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_sce40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_sce40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_sub_module.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_template.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_template.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_isp_wb40.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_isp_wb40.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_lgit_hi1332_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_lgit_hi1332_eeprom.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_llvd.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_llvd.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_mn34153.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_mn34153.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_optizoom_lib.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_paaf_lib.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_paaf_lib.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_pdaf.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_pdafcamif.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_pdafcamif.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_ppbase_module.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_ppbase_module.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_ppeiscore.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_ppeiscore.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_quadracfa.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_quadracfa.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_s5k5e8_cowell.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_s5k5e8_cowell.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_s5k5e8_sunny.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_s5k5e8_sunny.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_stillmore_lib.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_sunny_hi1332_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_sunny_hi1332_eeprom.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_sw2d_lib.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_thread_services.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_thread_services.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_tintless_algo.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_trueportrait_lib.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera2_mct.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_tuning.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_tuning_lookup.so \
+    vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_ubifocus_lib.so \
+vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/libmmcamera_imglib.so \
     vendor/lge/lv517/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
     vendor/lge/lv517/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
     vendor/lge/lv517/proprietary/vendor/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpegdma.so \
@@ -540,7 +545,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
     vendor/lge/lv517/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
     vendor/lge/lv517/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
-    vendor/lge/lv517/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
     vendor/lge/lv517/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
     vendor/lge/lv517/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
     vendor/lge/lv517/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
@@ -816,8 +820,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.iop@1.0 \
     libgpustats \
     libsdm-disp-vndapis \
-    libts_detected_face_hal \
-    libts_face_beautify_hal \
     libloc_api_v02 \
     libtime_genoff \
     datastatusnotification \

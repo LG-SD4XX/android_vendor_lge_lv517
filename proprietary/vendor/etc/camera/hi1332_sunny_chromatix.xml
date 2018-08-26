@@ -85,10 +85,6 @@ special_mode_mask values:
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
     <ChromatixName sensor_resolution_index="0">
-      <A3Preview_tmus>hi1332_sunny_zsl_preview_bu64244gwz_tmus</A3Preview_tmus>
-      <A3Video_tmus>hi1332_sunny_zsl_video_bu64244gwz_tmus</A3Video_tmus>
-      <ISPSnapshot_tmus>hi1332_sunny_snapshot_tmus</ISPSnapshot_tmus>
-      <ISPVideo_tmus>hi1332_sunny_default_video_tmus</ISPVideo_tmus>
       <ISPPreview>hi1332_sunny_preview</ISPPreview>
       <ISPSnapshot>hi1332_sunny_snapshot</ISPSnapshot>
       <ISPVideo>hi1332_sunny_default_video</ISPVideo>
@@ -100,10 +96,6 @@ special_mode_mask values:
       <A3Video>hi1332_sunny_zsl_video_bu64244gwz</A3Video>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="1">
-      <A3Preview_tmus>hi1332_sunny_zsl_preview_bu64244gwz_tmus</A3Preview_tmus>
-      <A3Video_tmus>hi1332_sunny_zsl_video_bu64244gwz_tmus</A3Video_tmus>
-      <ISPSnapshot_tmus>hi1332_sunny_snapshot_tmus</ISPSnapshot_tmus>
-      <ISPVideo_tmus>hi1332_sunny_default_video_tmus</ISPVideo_tmus>
       <ISPPreview>hi1332_sunny_preview</ISPPreview>
       <ISPSnapshot>hi1332_sunny_snapshot</ISPSnapshot>
       <ISPVideo>hi1332_sunny_default_video</ISPVideo>
@@ -115,10 +107,6 @@ special_mode_mask values:
       <A3Video>hi1332_sunny_zsl_video_bu64244gwz</A3Video>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="2">
-      <A3Preview_tmus>hi1332_sunny_zsl_preview_bu64244gwz_tmus</A3Preview_tmus>
-      <A3Video_tmus>hi1332_sunny_zsl_video_bu64244gwz_tmus</A3Video_tmus>
-      <ISPSnapshot_tmus>hi1332_sunny_snapshot_tmus</ISPSnapshot_tmus>
-      <ISPVideo_tmus>hi1332_sunny_default_video_tmus</ISPVideo_tmus>
       <ISPPreview>hi1332_sunny_preview</ISPPreview>
       <ISPSnapshot>hi1332_sunny_snapshot</ISPSnapshot>
       <ISPVideo>hi1332_sunny_default_video</ISPVideo>
