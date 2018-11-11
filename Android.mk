@@ -64,6 +64,7 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+
 LOCAL_MODULE := libsdm-disp-vndapis
 LOCAL_MODULE_OWNER := lge
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libsdm-disp-vndapis.so
