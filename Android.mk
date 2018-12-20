@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),lv517)
+ifeq ($(TARGET_DEVICE),rolex)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.display.color@1.0
