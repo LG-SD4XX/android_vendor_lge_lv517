@@ -16,7 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
-    vendor/lge/lv517/proprietary/vendor/bin/fingerprintd:$(TARGET_COPY_OUT_VENDOR)/bin/fingerprintd \
     vendor/lge/lv517/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/lge/lv517/proprietary/vendor/bin/mm-qcamera-app:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-app \
     vendor/lge/lv517/proprietary/vendor/bin/sensorservice:$(TARGET_COPY_OUT_VENDOR)/bin/sensorservice \
@@ -27,24 +26,24 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/lge/lv517/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     vendor/lge/lv517/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/film/0_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/0_film.dat \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/film/10_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/10_film.dat \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/film/1_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/1_film.dat \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/film/2_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/2_film.dat \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/film/3_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/3_film.dat \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/film/4_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/4_film.dat \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/film/5_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/5_film.dat \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/film/6_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/6_film.dat \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/film/7_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/7_film.dat \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/film/8_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/8_film.dat \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/film/9_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/9_film.dat \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/hi1332_lgit_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hi1332_lgit_chromatix.xml \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/hi1332_sunny_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hi1332_sunny_chromatix.xml \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/hi842_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hi842_chromatix.xml \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/s5k5e8_cowell_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e8_cowell_chromatix.xml \
-    vendor/lge/lv517/proprietary/vendor/etc/camera/s5k5e8_sunny_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e8_sunny_chromatix.xml \
-    vendor/lge/lv517/proprietary/vendor/etc/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera_config.xml \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/camera_config.xml:system/etc/camera/camera_config.xml \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/film/0_film.dat:system/etc/camera/film/0_film.dat \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/film/10_film.dat:system/etc/camera/film/10_film.dat \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/film/1_film.dat:system/etc/camera/film/1_film.dat \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/film/2_film.dat:system/etc/camera/film/2_film.dat \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/film/3_film.dat:system/etc/camera/film/3_film.dat \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/film/4_film.dat:system/etc/camera/film/4_film.dat \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/film/5_film.dat:system/etc/camera/film/5_film.dat \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/film/6_film.dat:system/etc/camera/film/6_film.dat \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/film/7_film.dat:system/etc/camera/film/7_film.dat \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/film/8_film.dat:system/etc/camera/film/8_film.dat \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/film/9_film.dat:system/etc/camera/film/9_film.dat \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/hi1332_lgit_chromatix.xml:system/etc/camera/hi1332_lgit_chromatix.xml \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/hi1332_sunny_chromatix.xml:system/etc/camera/hi1332_sunny_chromatix.xml \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/hi842_chromatix.xml:system/etc/camera/hi842_chromatix.xml \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/s5k5e8_cowell_chromatix.xml:system/etc/camera/s5k5e8_cowell_chromatix.xml \
+    vendor/lge/lv517/proprietary/vendor/etc/camera/s5k5e8_sunny_chromatix.xml:system/etc/camera/s5k5e8_sunny_chromatix.xml \
+    vendor/lge/lv517/proprietary/vendor/etc/camera_config.xml:system/etc/camera_config.xml \
     vendor/lge/lv517/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/lge/lv517/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/lge/lv517/proprietary/vendor/firmware/a300_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a300_pfp.fw \
@@ -274,12 +273,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
     vendor/lge/lv517/proprietary/vendor/lib/libc2d30-a3xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30-a3xx.so \
     vendor/lge/lv517/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
-    vendor/lge/lv517/proprietary/lib/libfpfactory.so:system/lib/libfpfactory.so \
-    vendor/lge/lv517/proprietary/lib/libfpfactory_jni.so:system/lib/libfpfactory_jni.so \
-    vendor/lge/lv517/proprietary/lib/libgf_algo.so:system/lib/libgf_algo.so \
-    vendor/lge/lv517/proprietary/lib/libgf_ca.so:system/lib/libgf_ca.so \
-    vendor/lge/lv517/proprietary/lib/libgf_hal.so:system/lib/libgf_hal.so \
-    vendor/lge/lv517/proprietary/lib/liblgftmitem.so:system/lib/liblgftmitem.so \
     vendor/lge/lv517/proprietary/vendor/lib/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcne.so \
     vendor/lge/lv517/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
     vendor/lge/lv517/proprietary/vendor/lib/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneoplookup.so \
@@ -625,7 +618,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/lib/hw/camera.msm8937.so:system/lib/hw/camera.msm8937.so \
     vendor/lge/lv517/proprietary/vendor/lib/hw/camera.msm8937.so:system/vendor/lib/hw/camera.msm8937.so \
     vendor/lge/lv517/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/lge/lv517/proprietary/lib/hw/fingerprint.msm8937.so:system/lib/hw/fingerprint.msm8937.so \
     vendor/lge/lv517/proprietary/lib/hw/sensors.msm8937.so:system/lib/hw/sensors.msm8937.so \
     vendor/lge/lv517/proprietary/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so \
     vendor/lge/lv517/proprietary/lib/libSJlowlight.so:system/lib/libSJlowlight.so \
@@ -899,7 +891,4 @@ PRODUCT_PACKAGES += \
     CNEService \
     com.qualcomm.location \
     qcrilmsgtunnel \
-    TimeService \
-    qdcm_calib_data_hx8394F_HD720p_video_BOE_c3a \
-    qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3a \
-    qdcm_calib_data_nt35521s_HD720p_video_EBBG_c3a
+    TimeService
