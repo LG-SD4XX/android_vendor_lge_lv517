@@ -115,6 +115,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/lib/hw/sensors.msm8937.so:system/lib/hw/sensors.msm8937.so \
     vendor/lge/lv517/proprietary/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so \
     vendor/lge/lv517/proprietary/vendor/lib/hw/camera.msm8937.so:system/vendor/lib/hw/camera.msm8937.so \
+    vendor/lge/lv517/proprietary/lib/libarcsoft_beauty_shot.so:system/lib/libarcsoft_beauty_shot.so \
     vendor/lge/lv517/proprietary/lib/liblghdri.so:system/lib/liblghdri.so \
     vendor/lge/lv517/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/lge/lv517/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
@@ -366,6 +367,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
     vendor/lge/lv517/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
     vendor/lge/lv517/proprietary/lib/librcc.so:system/lib/librcc.so \
+    vendor/lge/lv517/proprietary/lib/libSJlowlight.so:system/lib/libSJlowlight.so \
     vendor/lge/lv517/proprietary/vendor/lib/libsd_sdk_display.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsd_sdk_display.so \
     vendor/lge/lv517/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
     vendor/lge/lv517/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
@@ -631,6 +633,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/lv517/proprietary/vendor/lib/libquipc_os_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libquipc_os_api.so \
     vendor/lge/lv517/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
     vendor/lge/lv517/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
+    vendor/lge/lv517/proprietary/lib/libSJlowlight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSJlowlight.so \
     vendor/lge/lv517/proprietary/vendor/lib/libsc-a3xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsc-a3xx.so \
     vendor/lge/lv517/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
     vendor/lge/lv517/proprietary/vendor/lib/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-diag.so \
